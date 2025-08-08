@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pyme - Velas Aromáticas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Pyme</h1>
+    <p>Velas aromáticas en envases reutilizables</p>
+  </header>
+
+  <section id="intro">
+    <h2>Sobre Nosotros</h2>
+    <p>Luñ nace de la combinación de la luz y la luna, inspirándonos en crear momentos mágicos con velas aromáticas amigables con el medioambiente.</p>
+  </section>
+
+  <section id="productos">
+    <h2>Nuestras Velas</h2>
+    <div class="galeria">
+      <div class="producto" onclick="mostrarDetalle('Lavanda')">
+        <img src="lavanda.webp" alt="Vela Lavanda" />
+        <h3>Lavanda</h3>
+      </div>
+      <div class="producto" onclick="mostrarDetalle('Canela')">
+        <img src="canela.jpg" alt="Vela Canela" />
+        <h3>Canela</h3>
+      </div>
+      <div class="producto" onclick="mostrarDetalle('Cítricos')">
+        <img src="citrico.jpg" alt="Vela Cítricos" />
+        <h3>Cítricos</h3>
+      </div>
+    </div>
+  </section>
+
+  <div id="visorImagen" class="overlay" onclick="cerrarImagen()">
+    <img id="imagenGrande" src="" alt="Imagen Ampliada" />
+  </div>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form id="formulario">
+      <input type="text" id="nombre" placeholder="Tu nombre" required />
+      <input type="email" id="email" placeholder="Tu email" required />
+      <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Luñ - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
