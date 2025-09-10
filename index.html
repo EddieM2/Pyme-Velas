@@ -7,64 +7,69 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  
+
+  <header>
+    <h1>Receta de Porotos con Riendas</h1>
+  </header>
+
+  <div id="codigoQR"></div>
+
+  <section id="receta">
+  <h2>Receta</h2>
+
+  <div class="receta-contenido">
+    <!-- Imagen destacada -->
+    <img src="porotos.jpg" alt="Porotos con Riendas" class="receta-imagen"/>
+
+    <!-- Descripción -->
+    <p>
+      Un clásico de la cocina chilena: los porotos con riendas. Reconfortantes, nutritivos
+      y llenos de sabor. Perfectos para compartir en familia durante los días fríos.
+    </p>
+
+    <!-- Ingredientes -->
+    <h3>Ingredientes</h3>
+    <ul>
+      <li>500 g de porotos burros (remojados la noche anterior)</li>
+      <li>200 g de zapallo en cubos</li>
+      <li>1 cebolla picada en cubos</li>
+      <li>2 dientes de ajo picados</li>
+      <li>1 zanahoria en rodajas</li>
+      <li>200 g de tallarines</li>
+      <li>1 longaniza o chorizo en rodajas</li>
+      <li>1 cda de ají de color</li>
+      <li>Sal y pimienta a gusto</li>
+    </ul>
+
+    <!-- Preparación -->
+    <h3>Preparación</h3>
+    <ol>
+      <li>En una olla grande, sofríe la cebolla, ajo, zanahoria y la longaniza con un poco de aceite.</li>
+      <li>Agrega los porotos remojados, cúbrelos con agua y cocina hasta que estén tiernos.</li>
+      <li>Incorpora el zapallo, el ají de color y condimenta con sal y pimienta.</li>
+      <li>Cuando los porotos estén cocidos, añade los tallarines y cocina hasta que estén al dente.</li>
+      <li>Sirve caliente, acompañado de un buen pebre.</li>
+    </ol>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Lün - Todos los derechos reservados</p>
+  </footer>
+
   <!-- Librería para generar el QR -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
   <script>
-    const link = "https://eddiem2.github.io/Pyme-Velas/";
+    const link = "https://www.gourmet.cl/recetas/porotos-con-riendas/";
     new QRCode(document.getElementById("codigoQR"), {
       text: link,
       width: 200,
       height: 200
     });
   </script>
-
-  <header>
-    <h1>Lün</h1>
-    <p>Velas aromáticas en envases reutilizables</p>
-  </header>
-
-  <section id="intro">
-    <h2>Sobre Nosotros</h2>
-    <p>Lün nace de la combinación de la luz y la luna, inspirándonos en crear momentos mágicos con velas aromáticas amigables con el medioambiente.</p>
-  </section>
-
-  <section id="productos">
-    <h2>Nuestras Velas</h2>
-    <div class="galeria">
-      <div class="producto" onclick="mostrarDetalle('Lavanda')">
-        <img src="Vela1.png" alt="Vela Lavanda" />
-        <h3>Lavanda</h3>
-      </div>
-      <div class="producto" onclick="mostrarDetalle('Canela')">
-        <img src="vela3.png" alt="Vela Canela" />
-        <h3>Canela</h3>
-      </div>
-      <div class="producto" onclick="mostrarDetalle('Cítricos')">
-        <img src="Vela2.png" alt="Vela Cítricos" />
-        <h3>Cítricos</h3>
-      </div>
-    </div>
-  </section>
-
-  <div id="visorImagen" class="overlay" onclick="cerrarImagen()">
-    <img id="imagenGrande" src="" alt="Imagen Ampliada" />
-  </div>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form id="formulario">
-      <input type="text" id="nombre" placeholder="Tu nombre" required />
-      <input type="email" id="email" placeholder="Tu email" required />
-      <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Lün - Todos los derechos reservados</p>
-  </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

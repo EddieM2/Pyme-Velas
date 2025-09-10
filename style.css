@@ -28,42 +28,39 @@ header p {
   color: #7a5c42;
 }
 
-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
+#receta {
+  background-color: #fff;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-h2 {
-  margin-bottom: 1rem;
-  color: #bf7056;
-}
-
-.galeria {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.producto {
-  width: 200px;
-  cursor: pointer;
+#receta h2 {
   text-align: center;
-  border-radius: 10px;
-  transition: transform 0.2s;
+  margin-bottom: 20px;
+  color: #8B4513; /* tono cálido */
 }
 
-.producto:hover {
-  transform: scale(1.05);
+#receta .receta-imagen {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
-.producto img {
-  width: 100%;
-  border-radius: 10px;
-  height: 150px;
-  object-fit: cover;
+#receta h3 {
+  margin-top: 20px;
+  color: #444;
 }
+
+#receta ul, 
+#receta ol {
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
 
 form {
   display: flex;
@@ -120,4 +117,10 @@ footer {
   border-radius: 10px;
   box-shadow: 0 0 20px #fff;
   transition: transform 0.3s;
+}
+
+#codigoQR {
+  margin: 20px auto;
+  width: 200px;
+  text-align: center;
 }
